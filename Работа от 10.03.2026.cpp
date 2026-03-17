@@ -73,7 +73,6 @@ public:
         appeals++;
         cout << "Новое обращение от " << fio << ". Всего: " << appeals << endl;
     }
-
     // Метод: проверка активности (если обращений больше порога)
     void checkActive(int threshold) {
         if (appeals > threshold) {
@@ -82,7 +81,6 @@ public:
             cout << fio << " - неактивный клиент (<= " << threshold << " обращений)" << endl;
         }
     }
-
     // Метод: показать информацию
     void showInfo() {
         cout << "\n--- Информация о клиенте ---" << endl;
@@ -93,7 +91,6 @@ public:
         cout << "----------------------------\n" << endl;
     }
 };
-
 int main() {
     setlocale(LC_ALL, "Russian");
     cout << "=== Программа для работы с клиентами ===\n" << endl;
